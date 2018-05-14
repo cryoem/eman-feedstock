@@ -72,4 +72,6 @@ test:
     - call tests\run_tests.bat                               # [win]
 
 about:
+  home: http://blake.bcm.edu/emanwiki/EMAN2
   summary: A scientific image processing software suite with a focus on CryoEM and CryoET
+  dev_url: https://github.com/cryoem/eman2
