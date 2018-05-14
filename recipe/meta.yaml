@@ -53,6 +53,7 @@ requirements:
 
 build:
   number: 0
+  skip: True  # [win32]
   script_env:
    - EMAN_TEST_SKIP  # [osx]
 
