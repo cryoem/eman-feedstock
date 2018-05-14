@@ -59,6 +59,14 @@ conda clean --lock
 conda install --yes --quiet conda-forge-build-setup
 source run_conda_forge_build_setup
 
+
+# Install the yum requirements defined canonically in the
+# "recipe/yum_requirements.txt" file. After updating that file,
+# run "conda smithy rerender" and this line be updated
+# automatically.
+/usr/bin/sudo -n yum install -y libXi-devel libXmu-devel mesa-libGLU-devel
+
+
 conda build /recipe_root --quiet || exit 1
 upload_or_check_non_existence /recipe_root cryoem --channel=dev || exit 1
 
