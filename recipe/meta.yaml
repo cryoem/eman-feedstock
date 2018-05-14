@@ -28,8 +28,6 @@ requirements:
             "scipy 1.*",
             "ipython",
             "tensorflow-gpu 1.5.*",  # [linux]
-            "cudatoolkit 8.*",       # [linux]
-            "cudnn 7.*",             # [linux]
             "tensorflow 1.3.*",      # [osx]
             "pyqt 4.11.*",
             "qt >=4.8.6",
