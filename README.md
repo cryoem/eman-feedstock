@@ -1,7 +1,7 @@
 About eman
 ==========
 
-Home: 
+Home: http://blake.bcm.edu/emanwiki/EMAN2
 
 Package license: 
 
