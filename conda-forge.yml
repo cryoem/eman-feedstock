@@ -4,3 +4,12 @@ travis:
 appveyor:
   secure:
     BINSTAR_TOKEN: 8Bbfjp64oEvOo3rnhLhXmEhGf4T+JOy+AWB0WwSXZSbFqyBlWRNbW9G8aI/2liRz
+
+channels:
+  sources: [cryoem, defaults, conda-forge]
+  targets:
+  - [cryoem, dev]
+
+github:
+  user_or_org: cryoem
+  repo_name: eman-feedstock
