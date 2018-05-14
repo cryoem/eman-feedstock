@@ -3,7 +3,8 @@ package:
     version: 2.21
 
 source:
-    url: https://github.com/cryoem/eman2.git
+    fn: eman2-master.tar.gz
+    url: https://github.com/cryoem/eman2/archive/master.tar.gz
 
 requirements:
     {% set reqs_common = [
