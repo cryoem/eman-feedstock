@@ -34,12 +34,8 @@ requirements:
     - zlib
     - libglu                          # [linux]
 
-    run:
-      - eman-deps
-
-build:
-  script_env:
-   - EMAN_TEST_SKIP  # [osx]
+  run:
+    - eman-deps
 
 test:
   source_files:
