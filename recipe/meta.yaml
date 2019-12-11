@@ -21,9 +21,11 @@ requirements:
 
   host:
     - eman-deps 18.0.*
+    - boost     1.66.*
 
   run:
     - eman-deps 18.0.*
+    - boost     1.66.*
 
 test:
   source_files:
