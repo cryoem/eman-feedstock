@@ -1,5 +1,5 @@
 mesa-libGL
-mesa-libGLU
+mesa-libGLU-devel
 mesa-dri-drivers
 libselinux
 libXdamage
