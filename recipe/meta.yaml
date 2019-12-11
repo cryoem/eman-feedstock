@@ -1,6 +1,6 @@
 package:
-    name: eman
-    version: 2.21
+    name: eman-dev
+    version: 2.39
 
 source:
     path: {{ RECIPE_DIR }}/../..
