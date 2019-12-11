@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -xe
+export CONDA_BUILD_SYSROOT=/
 
 build_dir="${SRC_DIR}/../build_eman"
 
