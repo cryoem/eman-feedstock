@@ -22,6 +22,7 @@ requirements:
   host:
     - eman-deps 18.0.*
     - boost     1.66.*
+    - libglu                          # [linux]
 
   run:
     - eman-deps 18.0.*
