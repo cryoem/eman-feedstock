@@ -36,6 +36,7 @@ test:
     - tests/test_EMAN2DIR.py
     - tests/run_tests.sh
     - tests/run_tests.bat
+    - rt/pyem
 
   commands:
     - bash tests/run_tests.sh                                # [not win]
