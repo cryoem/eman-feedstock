@@ -13,26 +13,10 @@ build:
   number: 0
   skip: True  # [win32]
 
-requirements:
-  build:
-    - cmake     3.14.*
-    - {{ compiler('cxx') }}
-    - {{ cdt('mesa-libgl-devel') }}   # [linux]
-
-  host:
-    - eman-deps 18.0.*
-
-  run:
-    - eman-deps 18.0.*
-
 test:
   source_files:
     - examples/mpi_test.py
-    - tests/run_prog_tests.sh
-    - tests/programs_no_test.txt
-    - tests/test_EMAN2DIR.py
     - tests/run_tests.sh
-    - tests/run_tests.bat
 
   commands:
     - bash tests/run_tests.sh                                # [not win]
