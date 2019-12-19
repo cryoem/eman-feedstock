@@ -3,7 +3,7 @@
 
 package:
   name: eman-dev
-  version: 2.31
+  version: 2.39
 
 source:
   - url: https://github.com/cryoem/{{ repo }}/archive/{{ branch }}.tar.gz
