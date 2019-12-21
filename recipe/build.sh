@@ -14,9 +14,9 @@ CXXFLAGS=${CXXFLAGS/-std=c++17/-std=c++14}
 
 cmake --version
 if [[ ${HOST} =~ .*linux.* ]]; then
-    cmake $SRC_DIR -DCMAKE_TOOLCHAIN_FILE="${RECIPE_DIR}/cross-linux.cmake"
+    cmake $SRC_DIR -DCMAKE_TOOLCHAIN_FILE="${RECIPE_DIR}/cross-linux.cmake" -DENABLE_OPTIMIZE_MACHINE=ON -DENABLE_WARNINGS=OFF
 else
-    cmake $SRC_DIR
+    cmake $SRC_DIR -DENABLE_WARNINGS=OFF
 fi
 
 make -j${CPU_COUNT}
