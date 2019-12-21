@@ -4,12 +4,3 @@ channel_targets:
 - cryoem main
 cxx_compiler:
 - vs2008
-freetype:
-- 2.9.1
-pin_run_as_build:
-  freetype:
-    max_pin: x
-  zlib:
-    max_pin: x.x
-zlib:
-- '1.2'
