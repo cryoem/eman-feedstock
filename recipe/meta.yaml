@@ -21,7 +21,7 @@ requirements:
   
   host:
     - msinttypes  # [win]
-    - python 2.7.14
+    - python 2.7.*
     - boost 1.66.*
     - fftw-mpi
     - numpy          1.13.*
@@ -39,7 +39,6 @@ requirements:
 
 test:
   requires:
-    - openmpi              # [not win]
     - eman-deps 16.0.*
     - boost 1.66.*
   
