@@ -38,14 +38,14 @@ requirements:
 test:
   requires:
     - openmpi              # [not win]
+    - eman-deps 16.0.*
+    - boost 1.66.*
   
   source_files:
     - examples/mpi_test.py
-    - tests/run_prog_tests.sh
-    - tests/programs_no_test.txt
-    - tests/test_EMAN2DIR.py
-    - tests/run_tests.sh
-    - tests/run_tests.bat
+    - programs/
+    - tests/
+    - rt/pyem/
 
   commands:
     - bash tests/run_tests.sh                                # [not win]
