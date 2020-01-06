@@ -42,9 +42,9 @@ requirements:
   ] %}
   
   build:
-    {% for req in reqs_common %}
-    - {{ req }}
-    {% endfor %}
+    - cmake 3.14.*
+    - {{ compiler('cxx') }}
+    - {{ cdt('mesa-libgl-devel') }}      # [linux]
   
   run:
     {% for req in reqs_common %}
