@@ -9,6 +9,9 @@ source:
   url: https://github.com/cryoem/{{ repo }}/archive/{{ branch }}.tar.gz
   fn: {{ repo }}-{{ branch }}.tar.gz
 
+build:
+  number: 0
+
 requirements:
   {% set reqs_host = [
           "msinttypes",  # [win]
@@ -54,3 +57,6 @@ test:
   commands:
     - bash tests/run_tests.sh                                # [not win]
     - call tests\run_tests.bat                               # [win]
+
+about:
+  summary: Eman development package
