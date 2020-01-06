@@ -6,7 +6,7 @@ source:
   path: {{ RECIPE_DIR }}/../..
 
 requirements:
-  {% set reqs_common = [
+  {% set reqs_host = [
           "msinttypes",  # [win]
           "python 2.7.14",
           "boost 1.63.*",
@@ -46,10 +46,11 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
   
-  run:
-    {% for req in reqs_common %}
+  host:
+    {% for req in reqs_host %}
     - {{ req }}
     {% endfor %}
+    - libglu                             # [linux]
 
 test:
   requires:
