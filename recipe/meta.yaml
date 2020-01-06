@@ -51,10 +51,6 @@ requirements:
     - {{ req }}
     {% endfor %}
 
-build:
-  script_env:
-    - EMAN_TEST_SKIP  # [osx]
-
 test:
   requires:
     - openmpi              # [not win]
@@ -70,6 +66,3 @@ test:
   commands:
     - bash tests/run_tests.sh                                # [not win]
     - call tests\run_tests.bat                               # [win]
-
-about:
-  summary: A scientific image processing software suite with a focus on CryoEM and CryoET
