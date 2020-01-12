@@ -1,0 +1,6 @@
+channel_sources:
+- cryoem, defaults,conda-forge
+channel_targets:
+- cryoem main
+cxx_compiler:
+- vs2008
