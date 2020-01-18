@@ -10,15 +10,7 @@ env:
 
 matrix:
   include:
-    - env: CONFIG=osx_openmpi2.0.2 UPLOAD_PACKAGES=True PLATFORM=osx-64
-      os: osx
-      osx_image: xcode9.4
-
-    - env: CONFIG=osx_openmpi2.1.1 UPLOAD_PACKAGES=True PLATFORM=osx-64
-      os: osx
-      osx_image: xcode9.4
-
-    - env: CONFIG=osx_openmpi2.1.2 UPLOAD_PACKAGES=True PLATFORM=osx-64
+    - env: CONFIG=osx_ UPLOAD_PACKAGES=True PLATFORM=osx-64
       os: osx
       osx_image: xcode9.4
 

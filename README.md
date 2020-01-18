@@ -50,45 +50,17 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_openmpi2.0.2</td>
+              <td>linux</td>
               <td>
                 <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=linux&configuration=linux_openmpi2.0.2" alt="variant">
+                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=linux&configuration=linux_" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_openmpi2.1.1</td>
+              <td>osx</td>
               <td>
                 <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=linux&configuration=linux_openmpi2.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_openmpi2.1.2</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=linux&configuration=linux_openmpi2.1.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_openmpi2.0.2</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=osx&configuration=osx_openmpi2.0.2" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_openmpi2.1.1</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=osx&configuration=osx_openmpi2.1.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_openmpi2.1.2</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=osx&configuration=osx_openmpi2.1.2" alt="variant">
+                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=osx&configuration=osx_" alt="variant">
                 </a>
               </td>
             </tr><tr>

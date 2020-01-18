@@ -10,16 +10,8 @@ jobs:
   strategy:
     maxParallel: 8
     matrix:
-      linux_openmpi2.0.2:
-        CONFIG: linux_openmpi2.0.2
-        UPLOAD_PACKAGES: False
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openmpi2.1.1:
-        CONFIG: linux_openmpi2.1.1
-        UPLOAD_PACKAGES: False
-        DOCKER_IMAGE: condaforge/linux-anvil-comp7
-      linux_openmpi2.1.2:
-        CONFIG: linux_openmpi2.1.2
+      linux_:
+        CONFIG: linux_
         UPLOAD_PACKAGES: False
         DOCKER_IMAGE: condaforge/linux-anvil-comp7
   steps:
