@@ -7,7 +7,7 @@ version: 2
 jobs:
   build_linux_:
     working_directory: ~/test
-    machine: true
+    image: cryoem/eman-deps:16-boost166-circleci18
     environment:
       - CONFIG: "linux_"
         DOCKER_IMAGE: "condaforge/linux-anvil-comp7"
