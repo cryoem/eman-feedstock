@@ -32,6 +32,7 @@ test:
   requires:
     - eman-deps 16.0.*
     - boost 1.66.*
+    - openssh    #[linux]
   
   source_files:
     - examples/mpi_test.py
