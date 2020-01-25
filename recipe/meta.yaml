@@ -1,5 +1,5 @@
 {% set repo   = "eman2" %}
-{% set branch = "develop2" %}
+{% set branch = "develop3" %}
 
 package:
   name: eman-dev
