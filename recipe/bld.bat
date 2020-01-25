@@ -7,8 +7,8 @@ if errorlevel 1 exit 1
 set CL=/MP
 
 cmake --version
-cmake "%SRC_DIR%" -G "Visual Studio 9 2008 Win64" ^
-                    -DCMAKE_BUILD_TYPE=Release    ^
+cmake "%SRC_DIR%" -G "%CMAKE_GENERATOR%"       ^
+                    -DCMAKE_BUILD_TYPE=Release ^
                     -DENABLE_WARNINGS=OFF
 if errorlevel 1 exit 1
 
