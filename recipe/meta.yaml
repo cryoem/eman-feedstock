@@ -24,13 +24,13 @@ requirements:
     - {{ cdt('mesa-libgl-devel') }}      # [linux]
   
   host:
-    - eman-deps 16.0.*
-    - boost 1.66.*
+    - eman-deps 18.0.*
+    - boost     1.66.*
     - libglu      # [linux]
 
 test:
   requires:
-    - eman-deps 16.0.*
+    - eman-deps 18.0.*
     - boost 1.66.*
     - openssh    #[linux]
   
