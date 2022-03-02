@@ -25,6 +25,9 @@ requirements:
     - eman-deps         31.1
     - libglu                             # [linux]
 
+  run:
+    - eman-deps         31.1
+
 test:
   requires:
     - eman-deps         31.1
