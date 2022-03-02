@@ -1,0 +1,10 @@
+CMAKE_GENERATOR:
+- NMake Makefiles
+channel_sources:
+- cryoem, defaults,conda-forge
+channel_targets:
+- cryoem main
+cxx_compiler:
+- vs2015
+target_platform:
+- win-64
