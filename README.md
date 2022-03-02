@@ -20,19 +20,44 @@ Current build status
         <img alt="Linux" src="https://img.shields.io/circleci/project/github/cryoem/eman-feedstock/master.svg?label=Linux">
       </a>
     </td>
-  </tr><tr>
-    <td>Travis</td>
+  </tr>
+    
+  <tr>
+    <td>Azure</td>
     <td>
-      <a href="https://travis-ci.com/cryoem/eman-feedstock">
-        <img alt="macOS" src="https://img.shields.io/travis/com/cryoem/eman-feedstock/master.svg?label=macOS">
-      </a>
-    </td>
-  </tr><tr>
-    <td>Appveyor</td>
-    <td>
-      <a href="https://ci.appveyor.com/project/cryoem/eman-feedstock/branch/master">
-        <img alt="windows" src="https://img.shields.io/appveyor/ci/cryoem/eman-feedstock/master.svg?label=Windows">
-      </a>
+      <details>
+        <summary>
+          <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
+            <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master">
+          </a>
+        </summary>
+        <table>
+          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
+          <tbody><tr>
+              <td>linux_64</td>
+              <td>
+                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
+                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64</td>
+              <td>
+                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
+                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64</td>
+              <td>
+                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
+                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </details>
     </td>
   </tr>
 </table>
