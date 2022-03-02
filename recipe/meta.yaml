@@ -29,6 +29,7 @@ requirements:
 test:
   requires:
     - eman-deps 16.0.*
+    - openssh                            #[not win]
 
   source_files:
     - examples/mpi_test.py
