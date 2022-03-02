@@ -5,6 +5,6 @@ channel_sources:
 channel_targets:
 - cryoem main
 cxx_compiler:
-- vs2015
+- vs2017
 target_platform:
 - win-64
