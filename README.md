@@ -21,45 +21,6 @@ Current build status
       </a>
     </td>
   </tr>
-    
-  <tr>
-    <td>Azure</td>
-    <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-            <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64</td>
-              <td>
-                <a href="https://dev.azure.com/cryoem/feedstock-builds/_build/latest?definitionId=blank&branchName=master">
-                  <img src="https://dev.azure.com/cryoem/feedstock-builds/_apis/build/status/eman-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
-    </td>
-  </tr>
 </table>
 
 Current release info
