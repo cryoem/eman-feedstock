@@ -1,5 +1,4 @@
 channels:
-  sources: [cryoem, defaults, conda-forge]
   targets:
     - [cryoem, main]
 
@@ -9,8 +8,5 @@ github:
 
 provider:
   linux: circle
-
-azure:
-  build_id: blank
   osx: github_actions
   win: github_actions
