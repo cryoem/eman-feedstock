@@ -1,7 +1,7 @@
 CMAKE_GENERATOR:
 - NMake Makefiles
 channel_sources:
-- cryoem, defaults,conda-forge
+- cryoem, conda-forge, defaults
 channel_targets:
 - cryoem main
 cxx_compiler:
