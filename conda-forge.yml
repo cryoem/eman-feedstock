@@ -10,6 +10,3 @@ provider:
   linux: circle
   osx: github_actions
   win: github_actions
-
-os_version:
-  linux_64: cos7
