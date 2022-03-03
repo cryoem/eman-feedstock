@@ -13,3 +13,8 @@ provider:
 
 os_version:        # [cos7]
   linux_64: cos7   # [cos7]
+
+circle:
+  upload_packages: False
+github_actions:
+  upload_packages: False
