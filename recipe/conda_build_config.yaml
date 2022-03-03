@@ -3,6 +3,3 @@ channel_sources:
   - cryoem, conda-forge, defaults  # [win]
 channel_targets:
 - cryoem main
-cos:                               # [linux]
-  - cos6                           # [linux]
-  - cos7                           # [linux]
