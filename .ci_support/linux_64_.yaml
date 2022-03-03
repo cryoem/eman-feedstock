@@ -8,8 +8,6 @@ channel_sources:
 - cryoem, conda-forge
 channel_targets:
 - cryoem main
-cos:
-- cos7
 cxx_compiler:
 - gxx
 cxx_compiler_version:
