@@ -14,10 +14,10 @@ jobs:
       matrix:
         include:
           - CONFIG: win_64_
-            UPLOAD_PACKAGES: True
+            UPLOAD_PACKAGES: False
             os: windows
           - CONFIG: osx_64_
-            UPLOAD_PACKAGES: True
+            UPLOAD_PACKAGES: False
             os: macos
     steps:
     - name: Checkout code

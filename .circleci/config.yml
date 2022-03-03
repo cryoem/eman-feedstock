@@ -10,7 +10,7 @@ jobs:
     machine: true
     environment:
       - CONFIG: "linux_64_coscos6"
-      - UPLOAD_PACKAGES: "True"
+      - UPLOAD_PACKAGES: "False"
         DOCKER_IMAGE: "quay.io/condaforge/linux-anvil-cos7-x86_64"
     steps:
       - checkout
@@ -35,7 +35,7 @@ jobs:
     machine: true
     environment:
       - CONFIG: "linux_64_coscos7"
-      - UPLOAD_PACKAGES: "True"
+      - UPLOAD_PACKAGES: "False"
         DOCKER_IMAGE: "quay.io/condaforge/linux-anvil-cos7-x86_64"
     steps:
       - checkout
