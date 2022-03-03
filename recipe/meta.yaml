@@ -23,6 +23,17 @@ build:
   {% endif %}
   number: {{ build }}
 
+  # add build string so packages can depend on
+  # cpu variants explicitly:
+  # `pkg * cpu_haswell_*`     for haswell
+  # `pkg * cpu_sandybridge_*` for sandybridge
+  {% if cpu != 'None' %}
+  {% set cpu_prefix = "cpu_" + cpu + "_" %}
+  {% else %}
+  {% set cpu_prefix = "" %}
+  {% endif %}
+  string: "{{ cpu_prefix }}h{{ PKG_HASH }}_{{ build }}"
+
 requirements:
   build:
     - {{ compiler('cxx') }}
