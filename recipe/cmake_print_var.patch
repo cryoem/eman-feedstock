@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ebbdc416f..6869da80e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -223,6 +223,8 @@ ENDIF()
+ 
+ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EMAN_CXX_FLAGS} ${OPT_FLAGS}")
+ 
++cmake_print_variables(CMAKE_CXX_FLAGS)
++
+ if(WIN32)
+ 	add_definitions(-DNOMINMAX)
+ endif()
