@@ -10,8 +10,3 @@ provider:
   linux: circle
   osx: github_actions
   win: github_actions
-
-circle:
-  upload_packages: False
-github_actions:
-  upload_packages: False
