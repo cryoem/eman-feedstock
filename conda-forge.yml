@@ -11,5 +11,5 @@ provider:
   osx: github_actions
   win: github_actions
 
-os_version:
-  linux_64: cos7
+os_version:        # [cos7]
+  linux_64: cos7   # [cos7]
