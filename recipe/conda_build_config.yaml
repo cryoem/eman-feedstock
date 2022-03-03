@@ -3,3 +3,7 @@ channel_sources:
   - cryoem, conda-forge, defaults  # [win]
 channel_targets:
 - cryoem main
+cpu:
+  - haswell                        # [linux]
+  - sandybridge                    # [linux]
+  - None                           # [osx or win]

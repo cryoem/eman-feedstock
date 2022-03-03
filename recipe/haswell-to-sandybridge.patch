@@ -1,0 +1,27 @@
+From 5ca558c25cbd3942c4cde79e4a88fe64f3d5136e Mon Sep 17 00:00:00 2001
+From: shadow_walker <shadowwalkersb@gmail.com>
+Date: Thu, 3 Mar 2022 10:15:29 -0600
+Subject: [PATCH] Revert "Change compatibility compilation to haswell (AVX2),
+ circa 2014. AVX is being disabled on newer Intel machines."
+
+This reverts commit f7fde6a55912d0a63f555f1002f71c014377e65e.
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index ebbdc416f..7c49ee755 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -175,7 +175,7 @@ ELSEIF(ENABLE_OPTIMIZE_OSX)
+ ELSEIF(ENABLE_OPTIMIZE_MACHINE)
+ 	SET (OPT_FLAGS "-O5 -march=native -m64 -ffast-math -pipe")
+ ELSEIF(ENABLE_OPTIMIZE_COMPATIBILITY)
+-	SET (OPT_FLAGS "-O5 -march=haswell -m64 -ffast-math -pipe")
++	SET (OPT_FLAGS "-O5 -march=sandybridge -m64 -ffast-math -pipe")
+ ELSEIF(ENABLE_OPTIMIZE_X86_64)
+ 	SET (OPT_FLAGS "-O5 -march=k8 -mfpmath=sse -m64 -ffast-math -pipe")
+ #	SET (OPT_FLAGS "-O5 -mfpmath=both -march=core-avx-i -m64 -ffast-math -pipe")
+-- 
+2.31.0
+
