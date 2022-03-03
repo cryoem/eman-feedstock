@@ -3,7 +3,7 @@
 
 package:
   name: eman-dev
-  version: 3.0
+  version: 1.0
 
 source:
   - git_url: https://github.com/cryoem/eman2.git
