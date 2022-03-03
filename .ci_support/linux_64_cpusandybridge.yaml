@@ -8,6 +8,8 @@ channel_sources:
 - cryoem, conda-forge
 channel_targets:
 - cryoem main
+cpu:
+- sandybridge
 cxx_compiler:
 - gxx
 cxx_compiler_version:

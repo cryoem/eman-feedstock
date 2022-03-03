@@ -6,6 +6,8 @@ channel_sources:
 - cryoem, conda-forge, defaults
 channel_targets:
 - cryoem main
+cpu:
+- None
 cxx_compiler:
 - vs2017
 target_platform:
