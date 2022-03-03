@@ -1,5 +1,6 @@
 {% set repo   = "eman2" %}
 {% set branch = "master" %}
+{% set build = 0 %}
 
 package:
   name: eman-dev
@@ -15,7 +16,7 @@ source:
     folder: KHR                                                             # [win]
 
 build:
-  number: 0
+  number: {{ build }}
 
 requirements:
   build:
