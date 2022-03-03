@@ -1,5 +1,7 @@
 CMAKE_GENERATOR:
 - NMake Makefiles
+c_compiler:
+- vs2017
 channel_sources:
 - cryoem, conda-forge, defaults
 channel_targets:
