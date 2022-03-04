@@ -1,16 +1,7 @@
 diff --git a/CMakeLists.txt b/CMakeLists.txt
-index ebbdc416f..301a96e24 100644
+index ebbdc416f..6869da80e 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -4,7 +4,7 @@ PROJECT(EMAN
- 		LANGUAGES CXX
- 		)
- 
--set(CMAKE_CXX_STANDARD 14)
-+set(CMAKE_CXX_STANDARD 17)
- set(CMAKE_CXX_STANDARD_REQUIRED ON)
- set(CMAKE_CXX_EXTENSIONS OFF)
- 
 @@ -223,6 +223,8 @@ ENDIF()
  
  SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${EMAN_CXX_FLAGS} ${OPT_FLAGS}")
