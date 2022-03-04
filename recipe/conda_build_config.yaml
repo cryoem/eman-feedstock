@@ -4,6 +4,4 @@ channel_sources:
 channel_targets:
 - cryoem main
 cpu:
-  - haswell                        # [linux]
-  - sandybridge                    # [linux]
-  - None                           # [osx or win]
+  - None
