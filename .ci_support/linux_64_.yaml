@@ -9,7 +9,7 @@ channel_sources:
 channel_targets:
 - cryoem main
 cpu:
-- sandybridge
+- None
 cxx_compiler:
 - gxx
 cxx_compiler_version:
