@@ -15,7 +15,7 @@ source:
     folder: KHR                                                             # [win]
 
 build:
-  number: 25
+  number: 26
 
 requirements:
   build:
