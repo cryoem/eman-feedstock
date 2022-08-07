@@ -1,6 +1,3 @@
-{% set repo   = "eman2" %}
-{% set branch = "master" %}
-
 package:
   name: eman-dev
   version: 2.99
