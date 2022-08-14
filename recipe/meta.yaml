@@ -26,15 +26,15 @@ requirements:
     - make                               # [unix]
 
   host:
-    - eman-deps         31.1
+    - eman-deps         33.1
     - libglu                             # [linux]
 
   run:
-    - eman-deps         31.1
+    - eman-deps         33.1
 
 test:
   requires:
-    - eman-deps         31.1
+    - eman-deps         33.1
     - openssh                            #[not win]
 
   source_files:
