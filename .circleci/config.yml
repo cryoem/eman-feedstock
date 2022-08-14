@@ -7,7 +7,8 @@ version: 2
 jobs:
   build_linux_64_:
     working_directory: ~/test
-    machine: true
+    machine:
+      - image: ubuntu-2004:current
     environment:
       - CONFIG: "linux_64_"
       - UPLOAD_PACKAGES: "True"
