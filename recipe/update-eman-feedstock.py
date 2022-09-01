@@ -6,6 +6,7 @@ from pathlib import Path
 
 
 tags = [t['name'] for t in requests.get('https://api.github.com/repos/cryoem/eman2/tags').json()]
+tags = ['v2.99.33', 'v2.99.34', 'v2.91', 'v2.31', 'v2.22', 'v2.21', 'v2.21a-windows', 'v2.21a', 'v2.9', 'v2.3', 'v2.2', 'python2']
 print(f"Received GitHub tags:\n{tags}")
 
 tags = sorted([t for t in tags if t.startswith('v')], reverse=True)
