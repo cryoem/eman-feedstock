@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage('bump version') {
       steps {
+        sh 'env | sort'
         sh 'python ./recipe/update-eman-feedstock.py'
       }
     }
