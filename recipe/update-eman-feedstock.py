@@ -45,15 +45,26 @@ recipe_new = 'recipe'/ Path('meta.yaml.new')
 with open(recipe, mode='r') as fin, open((recipe_new), mode='w') as fout:
 	for line in fin:
 		words = line.split()
+		# if 'set' in line and 'version' in line:
 		if ' '.join(words[1:4]) == 'set version =':
 			print(line)
 			print(words)
 			words[4] = f'"{version}"'
 			print(words)
+			# words = line.split()
+			# l = '{% set version = "' + tag + '" %}'
 			l = ' '.join(words) + '\n'
+# 			l = line.partition(":")
 			print(l)
+#
+# 			build_num = str(int(l[2].strip()) + 1)
+# 			l = l[0] + l[1] + ' ' + build_num + '\n'
+#
+# 			print(l)
 			fout.write(l)
 
+# 			with open('build.num', 'w') as fnum:
+# 				fnum.write(build_num)
 		else:
 			fout.write(line)
 
