@@ -26,8 +26,12 @@ with open(recipe, mode='r') as fin, open((recipe_new), mode='w') as fout:
 	for line in fin:
 		words = line.split()
 		if ' '.join(words[1:4]) == 'set version =':
+			print(line)
+			print(words)
 			words[4] = f'"{version}"'
+			print(words)
 			l = ' '.join(words) + '\n'
+			print(l)
 			fout.write(l)
 
 		else:
