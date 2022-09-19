@@ -3,6 +3,7 @@
 
 import requests
 from pathlib import Path
+import subprocess as sp
 
 
 tags = [t['name'] for t in requests.get('https://api.github.com/repos/cryoem/eman2/tags').json()]
@@ -37,3 +38,15 @@ with open(recipe, mode='r') as fin, open((recipe_new), mode='w') as fout:
 			fout.write(line)
 
 recipe_new.rename(recipe)
+
+# Run subcommands: git operations
+for cmd in (
+            'git branch -D master',
+            'git checkout -b master',
+            'git add recipe/meta.yaml',
+            f'git commit -m {tag}',
+            'git push origin master',
+           ):
+	cmd = cmd.split()
+	print(cmd)
+	sp.run(cmd, capture_output=True, check=True)
