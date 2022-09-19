@@ -42,11 +42,11 @@ recipe_new.rename(recipe)
 
 # Run subcommands: git operations
 for cmd in (
-            'git branch -D master',
-            'git checkout -b master',
+            'git branch -D jenkins',
+            'git checkout -b jenkins',
             'git add recipe/meta.yaml',
             f'git commit -m {tag}',
-            'git push origin master',
+            'git push origin jenkins',
            ):
 	cmd = cmd.split()
 	print(cmd)
