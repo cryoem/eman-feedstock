@@ -48,7 +48,6 @@ for cmd in (
             'git checkout -b jenkins',
             'git add recipe/meta.yaml',
             f'git commit -m {tag}',
-            'git push origin jenkins',
            ):
 	cmd = cmd.split()
 	print(cmd)
