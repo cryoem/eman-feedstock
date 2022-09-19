@@ -42,6 +42,8 @@ recipe_new.rename(recipe)
 
 # Run subcommands: git operations
 for cmd in (
+            'git status',
+            'git branch -a',
             'git branch -D jenkins',
             'git checkout -b jenkins',
             'git add recipe/meta.yaml',
