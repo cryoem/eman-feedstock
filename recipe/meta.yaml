@@ -31,6 +31,7 @@ requirements:
   host:
     - eman-deps         33.1
     - libglu                             # [linux]
+    - python            3.9
 
   run:
     - eman-deps         33.1

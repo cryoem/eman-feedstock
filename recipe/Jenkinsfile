@@ -1,0 +1,13 @@
+pipeline {
+  agent {
+    node { label "linux" }
+  }
+
+  stages {
+    stage('bump version') {
+      steps {
+        sh 'python ./recipe/update-version.py'
+      }
+    }
+  }
+}
