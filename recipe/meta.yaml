@@ -1,5 +1,6 @@
 {% set version = "2.99.34" %}
 {% set tag = "v" + version %}
+{% set emandeps = "33.1" %}
 
 package:
   name: eman-dev
@@ -29,16 +30,16 @@ requirements:
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
 
   host:
-    - eman-deps         33.1
+    - eman-deps         {{ emandeps }}
     - libglu                             # [linux]
     - python            3.9
 
   run:
-    - eman-deps         33.1
+    - eman-deps         {{ emandeps }}
 
 test:
   requires:
-    - eman-deps         33.1
+    - eman-deps         {{ emandeps }}
     - openssh                            #[not win]
 
   source_files:
