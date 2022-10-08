@@ -1,12 +1,12 @@
 CMAKE_GENERATOR:
 - NMake Makefiles
 c_compiler:
-- vs2017
+- vs2019
 channel_sources:
 - cryoem, conda-forge, defaults
 channel_targets:
 - cryoem main
 cxx_compiler:
-- vs2017
+- vs2019
 target_platform:
 - win-64
