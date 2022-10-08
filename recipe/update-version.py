@@ -49,4 +49,7 @@ for cmd in (
            ):
 	cmd = cmd.split()
 	print(cmd)
-	sp.run(cmd, capture_output=True, check=True)
+	proc = sp.run(cmd, capture_output=True, check=False)
+	if proc.returncode != 0:
+		print(f'{proc.stdout=}')
+		print(f'{proc.stderr=}')
