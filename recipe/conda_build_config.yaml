@@ -3,3 +3,7 @@ channel_sources:
   - cryoem, conda-forge, defaults  # [win]
 channel_targets:
 - cryoem main
+c_compiler:    # [win]
+  - vs2017       # [win]
+cxx_compiler:  # [win]
+  - vs2017       # [win]
