@@ -8,6 +8,7 @@ set CL=/MP
 
 cmake --version
 cmake "%SRC_DIR%" -G "%CMAKE_GENERATOR%"       ^
+                    -DPython3_EXECUTABLE="%PYTHON%" ^
                     -DCMAKE_BUILD_TYPE=Release ^
                     -DENABLE_WARNINGS=OFF
 if errorlevel 1 exit 1
