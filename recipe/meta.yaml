@@ -1,4 +1,4 @@
-{% set version = "2.99.36" %}
+{% set version = "2.99.37" %}
 {% set tag = "v" + version %}
 {% set emandeps = "33.1" %}
 
