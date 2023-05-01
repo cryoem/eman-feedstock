@@ -1,11 +1,11 @@
-About eman-dev
-==============
+About eman-dev-feedstock
+========================
 
-Home: 
+Feedstock license: [BSD-3-Clause](https://github.com/cryoem/eman-feedstock/blob/main/LICENSE.txt)
+
+
 
 Package license: 
-
-Feedstock license: [BSD-3-Clause](https://github.com/cryoem/eman-feedstock/blob/master/LICENSE.txt)
 
 Summary: Eman development package
 
@@ -17,7 +17,7 @@ Current build status
     <td>CircleCI</td>
     <td>
       <a href="https://circleci.com/gh/cryoem/eman-feedstock">
-        <img alt="Linux" src="https://img.shields.io/circleci/project/github/cryoem/eman-feedstock/master.svg?label=Linux">
+        <img alt="Linux" src="https://img.shields.io/circleci/project/github/cryoem/eman-feedstock/main.svg?label=Linux">
       </a>
     </td>
   </tr>
