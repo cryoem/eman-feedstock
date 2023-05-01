@@ -121,6 +121,8 @@ test:
 
   commands:
     - echo "TESTING eman-dev"
+    - python -c "import numpy; assert numpy.version.version.startswith('{{ numpy }}'), 'NumPy version expected to be {{ numpy }}'"
+    - cmake --version
 
 about:
   summary: Eman development package
