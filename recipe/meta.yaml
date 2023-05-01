@@ -121,12 +121,16 @@ test:
 
   files:
     - test_imports_gui.py                # [ui == 'gui']
+    - test_imports_pydusa.py             # [not win]
+    - test_pydusa.py                     # [not win]
 
   commands:
     - echo "TESTING eman-dev"
     - python -c "import numpy; assert numpy.version.version.startswith('{{ numpy }}'), 'NumPy version expected to be {{ numpy }}'"
     - cmake --version
     - python test_imports_gui.py         # [ui == 'gui']
+    - python test_imports_pydusa.py      # [not win]
+    - mpirun -n 2 --oversubscribe python test_pydusa.py  # [not win]
 
 about:
   summary: Eman development package
