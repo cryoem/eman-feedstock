@@ -111,7 +111,7 @@ requirements:
 
 test:
   requires:
-    - openssh                            #[not win]
+    - openssh                            # [not win]
 
   source_files:
     - examples/mpi_test.py
