@@ -31,7 +31,6 @@ requirements:
     - libcxx         <16
 
   host:
-    - libglu                             # [linux]
     - python
     - pyqt
     - pyopengl
