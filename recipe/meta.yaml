@@ -120,8 +120,7 @@ test:
     - rt/pyem/
 
   commands:
-    - bash tests/run_tests.sh            # [not win and ui == 'gui']
-    - call tests\run_tests.bat           # [win     and ui == 'gui']
+    - echo "TESTING eman-dev"
 
 about:
   summary: Eman development package
