@@ -28,14 +28,17 @@ requirements:
     - cmake                              # [build_platform != target_platform]
     - numpy           1.20               # [build_platform != target_platform]
     - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - libcxx         <16
 
   host:
     - eman-deps         {{ emandeps }}
     - libglu                             # [linux]
     - python            3.9
+    - libcxx         <16
 
   run:
     - eman-deps         {{ emandeps }}
+    - libcxx         <16
 
 test:
   requires:
