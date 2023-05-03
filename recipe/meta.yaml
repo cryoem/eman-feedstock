@@ -1,6 +1,5 @@
 {% set version = "2.99.52" %}
 {% set tag = "v" + version %}
-{% set emandeps = "33.1" %}
 
 package:
   name: eman-dev
@@ -31,18 +30,76 @@ requirements:
     - libcxx         <16
 
   host:
-    - eman-deps         {{ emandeps }}
     - libglu                             # [linux]
     - python            3.9
+    - pyqt
+    - pyopengl
+    - cmake        >=3.14
+
+    - ipywidgets
+    - matplotlib
+    - scipy
+    - ipython
+    - scikit-learn
+    - pandas
+    - tensorflow
+    - pydusa                             # [not win]
+    - nose
+    - future
+    - configparser
+    - tqdm
+    - jupyterlab
+    - nodejs
+
+    - boost
+    - fftw
+    - numpy
+    - ftgl
+    - freetype
+    - gsl
+    - hdf5         >=1.12
+    - jpeg
+    - libtiff
+    - libpng
+    - zlib
     - libcxx         <16
 
   run:
-    - eman-deps         {{ emandeps }}
+    - python            3.9
+    - pyqt
+    - pyopengl
+    - cmake        >=3.14
+
+    - ipywidgets
+    - matplotlib
+    - scipy
+    - ipython
+    - scikit-learn
+    - pandas
+    - tensorflow
+    - pydusa                             # [not win]
+    - nose
+    - future
+    - configparser
+    - tqdm
+    - jupyterlab
+    - nodejs
+
+    - boost
+    - fftw
+    - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
+    - ftgl
+    - freetype
+    - gsl
+    - hdf5         >=1.12
+    - jpeg
+    - libtiff
+    - libpng
+    - zlib
     - libcxx         <16
 
 test:
   requires:
-    - eman-deps         {{ emandeps }}
     - openssh                            #[not win]
 
   source_files:
