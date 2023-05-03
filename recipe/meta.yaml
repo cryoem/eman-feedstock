@@ -32,8 +32,8 @@ requirements:
 
   host:
     - python
-    - pyqt
-    - pyopengl
+    - pyqt                               # [ui == 'gui']
+    - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
 
     - ipywidgets
@@ -66,8 +66,8 @@ requirements:
 
   run:
     - python
-    - pyqt
-    - pyopengl
+    - pyqt                               # [ui == 'gui']
+    - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
 
     - ipywidgets
