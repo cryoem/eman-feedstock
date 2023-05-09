@@ -13,13 +13,22 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - CONFIG: win_64_python3.9.____cpython
+          - CONFIG: win_64_python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: windows
-          - CONFIG: osx_64_python3.9.____cpython
+          - CONFIG: win_64_python3.9.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: windows
+          - CONFIG: osx_64_python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
-          - CONFIG: osx_arm64_python3.9.____cpython
+          - CONFIG: osx_64_python3.9.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_arm64_python3.9.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_arm64_python3.9.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
     steps:
