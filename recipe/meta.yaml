@@ -1,5 +1,11 @@
 {% set version = "2.99.52" %}
 {% set tag = "v" + version %}
+{% set build = 0 %}
+
+# prioritize gui variant via build number
+{% if ui == 'gui' %}
+{% set build = build  + 100 %}
+{% endif %}
 
 package:
   name: eman-dev
@@ -14,7 +20,12 @@ source:
     folder: KHR                                                             # [win]
 
 build:
-  number: 0
+  number: {{ build }}
+  # add build string so packages can depend on
+  # gui or nogui variants explicitly:
+  # `pkg * gui_*` for any gui
+  # `pkg * nogui_*` for no gui
+  string: "{{ ui }}_h{{ PKG_HASH }}_{{ build }}"
   skip: True  # [py!=39]
 
 requirements:
