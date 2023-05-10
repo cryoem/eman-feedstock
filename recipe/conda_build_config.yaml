@@ -7,3 +7,27 @@ c_compiler:    # [win]
   - vs2017       # [win]
 cxx_compiler:  # [win]
   - vs2017       # [win]
+
+ui:
+  - gui
+  - nogui
+
+pyqt:
+  - 5
+pyopengl:
+  - 3.1.5
+nodejs:
+  - '*'
+pydusa:
+  - 3.1
+
+pin_run_as_build:
+  pyqt:
+    max_pin: x.x
+  pyopengl:
+    max_pin: x.x
+  pydusa:
+    max_pin: x.x.x
+
+ignore_version:
+  - nodejs
