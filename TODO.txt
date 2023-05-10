@@ -1,6 +1,4 @@
 - upload/publish gui/nogui eman-dev
-  - update wiki instructions
-  - archve github/cryoem/eman-deps-feedstock
   - cmake findHDF5 issue
 
 - Currently, nogui ignores tests
