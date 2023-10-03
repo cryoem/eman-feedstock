@@ -6,6 +6,8 @@ github:
   user_or_org: cryoem
   repo_name: eman-feedstock
 
+channel_priority: flexible
+
 provider:
   linux: circle
   osx: github_actions
