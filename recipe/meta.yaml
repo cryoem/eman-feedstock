@@ -39,7 +39,6 @@ requirements:
     - cmake                              # [build_platform != target_platform]
     - numpy                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }} # [build_platform != target_platform]
-    - libcxx         <16
 
   host:
     - python
@@ -73,7 +72,6 @@ requirements:
     - libtiff
     - libpng
     - zlib
-    - libcxx         <16
 
   run:
     - python
@@ -107,7 +105,6 @@ requirements:
     - libtiff
     - libpng
     - zlib
-    - libcxx         <16
 
 test:
   requires:
