@@ -68,7 +68,6 @@ requirements:
     - freetype
     - gsl
     - hdf5         >=1.12
-    - jpeg
     - libtiff
     - libpng
     - zlib
@@ -101,7 +100,6 @@ requirements:
     - freetype
     - gsl
     - hdf5         >=1.12
-    - jpeg
     - libtiff
     - libpng
     - zlib
