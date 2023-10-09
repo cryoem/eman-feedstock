@@ -23,7 +23,7 @@ libtiff:
 nodejs:
 - '*'
 numpy:
-- '1.21'
+- '1.22'
 pin_run_as_build:
   boost:
     max_pin: x.x.x
