@@ -1,21 +1,13 @@
 boost:
 - 1.78.0
 c_compiler:
-- gcc
-c_compiler_version:
-- '12'
-cdt_name:
-- cos7
+- vs2019
 channel_sources:
-- cryoem, conda-forge
+- cryoem, conda-forge, defaults
 channel_targets:
 - cryoem main
 cxx_compiler:
-- gxx
-cxx_compiler_version:
-- '12'
-docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- vs2019
 fftw:
 - '3'
 freetype:
@@ -36,8 +28,6 @@ pin_run_as_build:
   numpy:
     min_pin: x.x
     max_pin: x.x
-  pydusa:
-    max_pin: x.x.x
   pyopengl:
     max_pin: x.x
   pyqt:
@@ -45,21 +35,17 @@ pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
-pydusa:
-- '3.1'
 pyopengl:
 - 3.1.5
 pyqt:
 - '5'
 python:
-- 3.9.* *_cpython
+- 3.10.* *_cpython
 target_platform:
-- linux-64
+- win-64
 ui:
-- nogui
+- gui
 zip_keys:
-- - c_compiler_version
-  - cxx_compiler_version
 - - python
   - numpy
 zlib:

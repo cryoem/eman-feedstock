@@ -52,11 +52,11 @@ pyopengl:
 pyqt:
 - '5'
 python:
-- 3.9.* *_cpython
+- 3.10.* *_cpython
 target_platform:
 - linux-64
 ui:
-- nogui
+- gui
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version

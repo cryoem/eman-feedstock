@@ -13,22 +13,58 @@ jobs:
       fail-fast: false
       matrix:
         include:
+          - CONFIG: win_64_numpy1.22python3.10.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: windows
+          - CONFIG: win_64_numpy1.22python3.10.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: windows
           - CONFIG: win_64_numpy1.22python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: windows
           - CONFIG: win_64_numpy1.22python3.9.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: windows
+          - CONFIG: win_64_numpy1.23python3.11.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: windows
+          - CONFIG: win_64_numpy1.23python3.11.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: windows
+          - CONFIG: osx_64_numpy1.22python3.10.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_64_numpy1.22python3.10.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: macos
           - CONFIG: osx_64_numpy1.22python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
           - CONFIG: osx_64_numpy1.22python3.9.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
+          - CONFIG: osx_64_numpy1.23python3.11.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_64_numpy1.23python3.11.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_arm64_numpy1.22python3.10.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_arm64_numpy1.22python3.10.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: macos
           - CONFIG: osx_arm64_numpy1.22python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
           - CONFIG: osx_arm64_numpy1.22python3.9.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_arm64_numpy1.23python3.11.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: macos
+          - CONFIG: osx_arm64_numpy1.23python3.11.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
     steps:

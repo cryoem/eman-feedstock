@@ -20,8 +20,6 @@ freetype:
 - '2'
 gsl:
 - '2.7'
-jpeg:
-- '9'
 libpng:
 - '1.6'
 libtiff:
