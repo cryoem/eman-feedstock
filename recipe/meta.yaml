@@ -67,7 +67,8 @@ requirements:
     - ftgl
     - freetype
     - gsl
-    - hdf5         >=1.12
+    - hdf5         >=1.12                # [not win]
+    - hdf5         <1.14                 # [win]
     - libtiff
     - libpng
     - zlib
@@ -99,7 +100,8 @@ requirements:
     - ftgl
     - freetype
     - gsl
-    - hdf5         >=1.12
+    - hdf5         >=1.12                # [not win]
+    - hdf5         <1.14                 # [win]
     - libtiff
     - libpng
     - zlib
