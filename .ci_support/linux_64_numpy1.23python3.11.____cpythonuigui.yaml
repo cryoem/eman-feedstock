@@ -7,7 +7,7 @@ c_compiler_version:
 cdt_name:
 - cos7
 channel_sources:
-- cryoem, conda-forge
+- cryoem, defaults
 channel_targets:
 - cryoem dev
 cxx_compiler:

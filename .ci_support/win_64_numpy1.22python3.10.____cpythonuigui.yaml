@@ -3,7 +3,7 @@ boost:
 c_compiler:
 - vs2019
 channel_sources:
-- cryoem, conda-forge, defaults
+- cryoem, defaults
 channel_targets:
 - cryoem dev
 cxx_compiler:
