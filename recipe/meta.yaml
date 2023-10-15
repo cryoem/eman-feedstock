@@ -27,6 +27,7 @@ build:
   # `pkg * nogui_*` for no gui
   string: "{{ ui }}_h{{ PKG_HASH }}_{{ build }}"
   skip: True  # [py < 39]
+  skip: True  # [ui == 'nogui']
 
 requirements:
   build:
