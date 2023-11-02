@@ -41,8 +41,8 @@ recipe_new.rename(recipe)
 
 # Run subcommands: git operations
 for cmd in (
-            'git branch -D master',
-            'git checkout -b master',
+            'git config --global user.email "eman.github@gmail.com"',
+            'git config --global user.name "eman-bot"',
             'git add recipe/meta.yaml',
             f'git commit -m {tag}',
             'git push origin master',
