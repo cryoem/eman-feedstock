@@ -48,8 +48,8 @@ for cmd in (
             'git push origin master',
            ):
 	cmd = cmd.split()
-	print(cmd)
+	print(f'> {" ".join(cmd)}')
 	proc = sp.run(cmd, capture_output=True, check=False)
+	print(proc.stdout)
 	if proc.returncode != 0:
-		print(f'{proc.stdout=}')
-		print(f'{proc.stderr=}')
+		print(f'stderr:\n{proc.stderr=}')
