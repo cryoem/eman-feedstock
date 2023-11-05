@@ -60,6 +60,7 @@ requirements:
     - tqdm
     - jupyterlab
     - nodejs
+    - biopython
 
     - boost
     - fftw
@@ -93,6 +94,7 @@ requirements:
     - tqdm
     - jupyterlab
     - nodejs
+    - biopython
 
     - boost
     - fftw
