@@ -41,15 +41,15 @@ recipe_new.rename(recipe)
 
 # Run subcommands: git operations
 for cmd in (
-            'git branch -D master',
-            'git checkout -b master',
+            'git config --global user.email "eman.github@gmail.com"',
+            'git config --global user.name "eman-bot"',
             'git add recipe/meta.yaml',
             f'git commit -m {tag}',
             'git push origin master',
            ):
 	cmd = cmd.split()
-	print(cmd)
+	print(f'> {" ".join(cmd)}')
 	proc = sp.run(cmd, capture_output=True, check=False)
+	print(proc.stdout)
 	if proc.returncode != 0:
-		print(f'{proc.stdout=}')
-		print(f'{proc.stderr=}')
+		print(f'stderr:\n{proc.stderr=}')
