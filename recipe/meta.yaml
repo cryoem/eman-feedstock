@@ -1,6 +1,6 @@
 {% set version = "2.99.54" %}
 {% set tag = "v" + version %}
-{% set build = 1 %}
+{% set build = 2 %}
 
 # prioritize gui variant via build number
 {% if ui == 'gui' %}
@@ -60,6 +60,7 @@ requirements:
     - tqdm
     - jupyterlab
     - nodejs
+    - biopython
 
     - boost
     - fftw
@@ -93,6 +94,7 @@ requirements:
     - tqdm
     - jupyterlab
     - nodejs
+    - biopython
 
     - boost
     - fftw
