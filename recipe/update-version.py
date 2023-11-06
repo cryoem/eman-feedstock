@@ -1,22 +1,12 @@
 #!/usr/bin/python
 
 
-import requests
+import os
 from pathlib import Path
 import subprocess as sp
 
 
-tags = [t['name'] for t in requests.get('https://api.github.com/repos/cryoem/eman2/tags').json()]
-print(f"Received GitHub tags:\n{tags}")
-
-tags = sorted([t for t in tags if t.startswith('v')], reverse=True)
-print(f"Version tags (sorted: latest to oldest):\n{tags}")
-
-tag = tags[0]
-version = tag[1:]
-
-print(f"Latest tag:\n{tag}")
-print(f"Latest version:\n{version}")
+version = os.environ['new_version']
 
 # Update recipe with latest version
 recipe = 'recipe'/ Path('meta.yaml')
@@ -44,7 +34,7 @@ for cmd in (
             'git config --global user.email "eman.github@gmail.com"',
             'git config --global user.name "eman-bot"',
             'git add recipe/meta.yaml',
-            f'git commit -m {tag}',
+            f'git commit -m v{version}',
             'git push origin master',
            ):
 	cmd = cmd.split()

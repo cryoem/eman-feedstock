@@ -1,5 +1,9 @@
 name: Build for new tag
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      new_version:
+        description: 'New tag to build from passed by cryoem/eman2 actions'
 
 jobs:
   update-version:
@@ -11,3 +15,5 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - run: python ./recipe/update-version.py
+        env:
+          new_version: ${{ inputs.new_version }}
