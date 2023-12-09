@@ -1,6 +1,6 @@
-{% set version = "2.99.54" %}
+{% set version = "2.99.55" %}
 {% set tag = "v" + version %}
-{% set build = 2 %}
+{% set build = 0 %}
 
 # prioritize gui variant via build number
 {% if ui == 'gui' %}
