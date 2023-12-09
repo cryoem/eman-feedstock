@@ -1,7 +1,3 @@
-channels:
-  targets:
-    - [cryoem, main]
-
 github:
   user_or_org: cryoem
   repo_name: eman-feedstock
