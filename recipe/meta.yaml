@@ -44,6 +44,7 @@ requirements:
 
   host:
     - python
+    - pip
     - pyqt                               # [ui == 'gui']
     - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
