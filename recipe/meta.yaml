@@ -28,7 +28,7 @@ build:
   string: "{{ ui }}_h{{ PKG_HASH }}_{{ build }}"
   skip: True  # [py != 311 and linux]
   skip: True  # [py != 311 and osx]
-  skip: True  # [py != 310 and win]
+  skip: True  # [win]
 
 requirements:
   build:
