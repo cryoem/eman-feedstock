@@ -1,7 +1,7 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '11.0'
-boost:
-- 1.78.0
+MACOSX_SDK_VERSION:
+- '11.0'
 c_compiler:
 - clang
 c_compiler_version:
@@ -23,7 +23,7 @@ gsl:
 libpng:
 - '1.6'
 libtiff:
-- '4.5'
+- '4.6'
 macos_machine:
 - arm64-apple-darwin20.0.0
 nodejs:
@@ -31,8 +31,6 @@ nodejs:
 numpy:
 - '1.23'
 pin_run_as_build:
-  boost:
-    max_pin: x.x.x
   numpy:
     min_pin: x.x
     max_pin: x.x
