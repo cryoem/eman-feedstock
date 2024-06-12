@@ -21,19 +21,19 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - CONFIG: osx_64_numpy1.23python3.11.____cpythonuigui
+          - CONFIG: osx_64_numpy1.22python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
-          - CONFIG: osx_64_numpy1.23python3.11.____cpythonuinogui
+          - CONFIG: osx_64_numpy1.22python3.9.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
-          - CONFIG: osx_arm64_numpy1.23python3.11.____cpythonuigui
+          - CONFIG: osx_arm64_numpy1.22python3.9.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
-          - CONFIG: osx_arm64_numpy1.23python3.11.____cpythonuinogui
+          - CONFIG: osx_arm64_numpy1.22python3.9.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
