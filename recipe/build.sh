@@ -21,4 +21,3 @@ cmake $SRC_DIR ${CMAKE_ARGS}
 
 make -j${CPU_COUNT}
 make install
-make install-sphire
