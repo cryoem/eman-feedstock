@@ -55,8 +55,7 @@ requirements:
     - ipython
     - scikit-learn
     - pandas
-    - tensorflow   2.12                  # [not win]
-    - tensorflow   2.10                  # [win]
+    - tensorflow
     - pydusa                             # [not win]
     - nose
     - future
@@ -91,8 +90,7 @@ requirements:
     - ipython
     - scikit-learn
     - pandas
-    - tensorflow   2.12                  # [not win]
-    - tensorflow   2.10                  # [win]
+    - tensorflow
     - pydusa                             # [not win]
     - nose
     - future
