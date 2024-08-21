@@ -51,6 +51,8 @@ python:
 - 3.11.* *_cpython
 target_platform:
 - linux-64
+tensorflow:
+- '2.16'
 ui:
 - gui
 zip_keys:

@@ -53,6 +53,8 @@ python:
 - 3.11.* *_cpython
 target_platform:
 - osx-arm64
+tensorflow:
+- '2.16'
 ui:
 - nogui
 zip_keys:
