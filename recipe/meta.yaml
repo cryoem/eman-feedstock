@@ -65,6 +65,7 @@ requirements:
     - jupyterlab
     - nodejs
     - biopython
+    - umap-learn
 
     - boost
     - fftw
@@ -100,6 +101,7 @@ requirements:
     - jupyterlab
     - nodejs
     - biopython
+    - umap-learn
 
     - boost
     - fftw
