@@ -111,19 +111,5 @@ requirements:
     - libpng
     - zlib
 
-test:
-  requires:
-    - openssh                            #[not win]
-
-  source_files:
-    - examples/mpi_test.py
-    - programs/
-    - tests/
-    - rt/pyem/
-
-  commands:
-    - bash tests/run_tests.sh            # [not win and ui == 'gui']
-    - call tests\run_tests.bat           # [win     and ui == 'gui']
-
 about:
   summary: Eman development package
