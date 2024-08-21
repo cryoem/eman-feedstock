@@ -1,4 +1,4 @@
-{% set version = "2.99.58" %}
+{% set version = "2.99.59" %}
 {% set tag = "v" + version %}
 {% set build = 0 %}
 
@@ -57,7 +57,6 @@ requirements:
     - pandas
     - tensorflow
     - pydusa                             # [not win]
-    - nose
     - future
     - configparser
     - tqdm
@@ -92,7 +91,6 @@ requirements:
     - pandas
     - tensorflow
     - pydusa                             # [not win]
-    - nose
     - future
     - configparser
     - tqdm
