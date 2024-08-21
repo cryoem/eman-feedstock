@@ -56,7 +56,6 @@ requirements:
     - scikit-learn
     - pandas
     - tensorflow
-    - keras
     - pydusa                             # [not win]
     - future
     - configparser
@@ -91,7 +90,6 @@ requirements:
     - scikit-learn
     - pandas
     - tensorflow
-    - keras
     - pydusa                             # [not win]
     - future
     - configparser
