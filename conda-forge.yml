@@ -5,7 +5,7 @@ github:
 channel_priority: flexible
 
 provider:
-  linux: circle
+  linux: github_actions
   osx: github_actions
   win: github_actions
 

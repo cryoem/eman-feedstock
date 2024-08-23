@@ -1,4 +1,4 @@
-{% set version = "2.99.58" %}
+{% set version = "2.99.59" %}
 {% set tag = "v" + version %}
 {% set build = 0 %}
 
@@ -26,8 +26,8 @@ build:
   # `pkg * gui_*` for any gui
   # `pkg * nogui_*` for no gui
   string: "{{ ui }}_h{{ PKG_HASH }}_{{ build }}"
-  skip: True  # [py != 311 and linux]
-  skip: True  # [py != 311 and osx]
+  skip: True  # [py != 312 and linux]
+  skip: True  # [py != 312 and osx]
   skip: True  # [win]
 
 requirements:
@@ -55,16 +55,15 @@ requirements:
     - ipython
     - scikit-learn
     - pandas
-    - tensorflow   2.12                  # [not win]
-    - tensorflow   2.10                  # [win]
+    - tensorflow
     - pydusa                             # [not win]
-    - nose
     - future
     - configparser
     - tqdm
     - jupyterlab
     - nodejs
     - biopython
+    - umap-learn
 
     - boost
     - fftw
@@ -90,16 +89,15 @@ requirements:
     - ipython
     - scikit-learn
     - pandas
-    - tensorflow   2.12                  # [not win]
-    - tensorflow   2.10                  # [win]
+    - tensorflow
     - pydusa                             # [not win]
-    - nose
     - future
     - configparser
     - tqdm
     - jupyterlab
     - nodejs
     - biopython
+    - umap-learn
 
     - boost
     - fftw
@@ -112,20 +110,6 @@ requirements:
     - libtiff
     - libpng
     - zlib
-
-test:
-  requires:
-    - openssh                            #[not win]
-
-  source_files:
-    - examples/mpi_test.py
-    - programs/
-    - tests/
-    - rt/pyem/
-
-  commands:
-    - bash tests/run_tests.sh            # [not win and ui == 'gui']
-    - call tests\run_tests.bat           # [win     and ui == 'gui']
 
 about:
   summary: Eman development package
