@@ -1,6 +1,5 @@
 channel_sources:
-  - cryoem, conda-forge            # [unix]
-  - cryoem, conda-forge, defaults  # [win]
+  - cryoem, conda-forge
 channel_targets:
 - cryoem main
 
