@@ -32,8 +32,6 @@ pin_run_as_build:
   numpy:
     min_pin: x.x
     max_pin: x.x
-  pydusa:
-    max_pin: x.x.x
   pyopengl:
     max_pin: x.x
   pyqt:
@@ -41,8 +39,6 @@ pin_run_as_build:
   python:
     min_pin: x.x
     max_pin: x.x
-pydusa:
-- '3.1'
 pyopengl:
 - 3.1.5
 pyqt:
