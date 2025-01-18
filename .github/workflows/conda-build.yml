@@ -25,12 +25,22 @@ jobs:
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
           - CONFIG: linux_64_numpy1.26python3.12.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
-            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
+          - CONFIG: linux_aarch64_numpy1.26python3.12.____cpythonuigui
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
+          - CONFIG: linux_aarch64_numpy1.26python3.12.____cpythonuinogui
+            UPLOAD_PACKAGES: True
+            os: ubuntu
+            runs_on: ['ubuntu-latest']
+            DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
           - CONFIG: osx_64_numpy1.26python3.12.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos

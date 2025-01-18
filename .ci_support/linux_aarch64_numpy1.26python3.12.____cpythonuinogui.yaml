@@ -46,11 +46,11 @@ pyqt:
 python:
 - 3.12.* *_cpython
 target_platform:
-- linux-64
+- linux-aarch64
 tensorflow:
 - '2.16'
 ui:
-- gui
+- nogui
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
