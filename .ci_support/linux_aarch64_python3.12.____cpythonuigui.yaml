@@ -26,12 +26,7 @@ libtiff:
 - '4.7'
 nodejs:
 - '*'
-numpy:
-- '1.26'
 pin_run_as_build:
-  numpy:
-    min_pin: x.x
-    max_pin: x.x
   pyopengl:
     max_pin: x.x
   pyqt:
@@ -46,15 +41,13 @@ pyqt:
 python:
 - 3.12.* *_cpython
 target_platform:
-- linux-64
+- linux-aarch64
 tensorflow:
 - '2.16'
 ui:
-- nogui
+- gui
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - python
-  - numpy
 zlib:
 - '1'

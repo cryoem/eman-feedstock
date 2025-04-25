@@ -21,39 +21,39 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - CONFIG: linux_64_numpy1.26python3.12.____cpythonuigui
+          - CONFIG: linux_64_python3.12.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
-          - CONFIG: linux_64_numpy1.26python3.12.____cpythonuinogui
+          - CONFIG: linux_64_python3.12.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
-          - CONFIG: linux_aarch64_numpy1.26python3.12.____cpythonuigui
+          - CONFIG: linux_aarch64_python3.12.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
-          - CONFIG: linux_aarch64_numpy1.26python3.12.____cpythonuinogui
+          - CONFIG: linux_aarch64_python3.12.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: ubuntu
             runs_on: ['ubuntu-latest']
             DOCKER_IMAGE: quay.io/condaforge/linux-anvil-x86_64:cos7
-          - CONFIG: osx_64_numpy1.26python3.12.____cpythonuigui
+          - CONFIG: osx_64_python3.12.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
-          - CONFIG: osx_64_numpy1.26python3.12.____cpythonuinogui
+          - CONFIG: osx_64_python3.12.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
-          - CONFIG: osx_arm64_numpy1.26python3.12.____cpythonuigui
+          - CONFIG: osx_arm64_python3.12.____cpythonuigui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
-          - CONFIG: osx_arm64_numpy1.26python3.12.____cpythonuinogui
+          - CONFIG: osx_arm64_python3.12.____cpythonuinogui
             UPLOAD_PACKAGES: True
             os: macos
             runs_on: ['macos-13']
