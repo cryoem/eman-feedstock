@@ -6,6 +6,7 @@ channel_priority: flexible
 
 provider:
   linux: github_actions
+  linux-aarch64: github-actions
   osx: github_actions
   win: github_actions
 
