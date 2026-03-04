@@ -57,7 +57,7 @@ requirements:
     - pandas
     - tensorflow
     - tf-keras
-    - pydusa                             # [not win]
+#    - pydusa                             # [not win]
     - future
     - configparser
     - tqdm
@@ -73,7 +73,7 @@ requirements:
     - freetype
     - gsl
     - hdf5         >=1.12                # [not win]
-    - hdf5         <1.14                 # [win]
+#    - hdf5         <1.14                 # [win]
     - libtiff
     - libpng
     - zlib
@@ -92,7 +92,7 @@ requirements:
     - pandas
     - tensorflow
     - tf-keras
-    - pydusa                             # [not win]
+#    - pydusa                             # [not win]
     - future
     - configparser
     - tqdm
@@ -103,12 +103,13 @@ requirements:
 
     - boost
     - fftw
-    - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
+#    - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
+    - numpy
     - ftgl
     - freetype
     - gsl
     - hdf5         >=1.12                # [not win]
-    - hdf5         <1.14                 # [win]
+#    - hdf5         <1.14                 # [win]
     - libtiff
     - libpng
     - zlib
