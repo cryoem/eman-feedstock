@@ -40,6 +40,7 @@ requirements:
     - python                             # [build_platform != target_platform]
     - cmake                              # [build_platform != target_platform]
 #    - numpy                              # [build_platform != target_platform]
+    - numpy
     - cross-python_{{ target_platform }} # [build_platform != target_platform]
 
   host:
