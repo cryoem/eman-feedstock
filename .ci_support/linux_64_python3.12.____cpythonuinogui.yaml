@@ -1,19 +1,19 @@
 c_compiler:
 - gcc
 c_compiler_version:
-- '13'
+- '14'
 cdt_name:
-- cos7
+- conda
 channel_sources:
-- cryoem, conda-forge
+- conda-forge, cryoem
 channel_targets:
 - cryoem main
 cxx_compiler:
 - gxx
 cxx_compiler_version:
-- '13'
+- '14'
 docker_image:
-- quay.io/condaforge/linux-anvil-cos7-x86_64
+- quay.io/condaforge/linux-anvil-x86_64:cos7
 fftw:
 - '3'
 freetype:
@@ -27,11 +27,8 @@ libtiff:
 nodejs:
 - '*'
 numpy:
-- '1.26'
+- '2'
 pin_run_as_build:
-  numpy:
-    min_pin: x.x
-    max_pin: x.x
   pyopengl:
     max_pin: x.x
   pyqt:
@@ -40,21 +37,17 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 pyopengl:
-- 3.1.5
+- 3.1.10
 pyqt:
 - '5'
 python:
 - 3.12.* *_cpython
 target_platform:
 - linux-64
-tensorflow:
-- '2.16'
 ui:
-- gui
+- nogui
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
-- - python
-  - numpy
 zlib:
 - '1'
