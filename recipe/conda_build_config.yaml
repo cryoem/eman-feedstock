@@ -1,5 +1,5 @@
 channel_sources:
-  - cryoem, conda-forge
+  - conda-forge, cryoem
 channel_targets:
 - cryoem main
 
@@ -10,9 +10,12 @@ ui:
 pyqt:
   - 5
 pyopengl:
-  - 3.1.5
+  - 3.1.10
 nodejs:
   - '*'
+numpy:
+  - 2
+    
 
 pin_run_as_build:
   pyqt:

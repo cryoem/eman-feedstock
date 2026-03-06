@@ -39,7 +39,7 @@ requirements:
     - make                               # [unix]
     - python                             # [build_platform != target_platform]
     - cmake                              # [build_platform != target_platform]
-    - numpy                              # [build_platform != target_platform]
+#    - numpy                              # [build_platform != target_platform]
     - cross-python_{{ target_platform }} # [build_platform != target_platform]
 
   host:
@@ -55,7 +55,7 @@ requirements:
     - ipython
     - scikit-learn
     - pandas
-    - tensorflow
+    - tensorflow >=2.18
     - tf-keras
 #    - pydusa                             # [not win]
     - future
@@ -90,7 +90,7 @@ requirements:
     - ipython
     - scikit-learn
     - pandas
-    - tensorflow
+    - tensorflow >=2.18
     - tf-keras
 #    - pydusa                             # [not win]
     - future
@@ -103,8 +103,7 @@ requirements:
 
     - boost
     - fftw
-#    - {{ pin_compatible('numpy', min_pin='x.x', max_pin='x.x') }}
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - ftgl
     - freetype
     - gsl
