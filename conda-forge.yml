@@ -6,9 +6,13 @@ channel_priority: flexible
 
 provider:
   linux: github_actions
-  linux-aarch64: github-actions
+  linux-aarch64: github_actions
   osx: github_actions
   win: github_actions
+
+# Enables the manual "Run workflow" button in the GitHub Actions UI natively via conda-smithy
+github_actions:
+  trigger_via_workflow_dispatch: true
 
 os_version:
   linux_64: cos7

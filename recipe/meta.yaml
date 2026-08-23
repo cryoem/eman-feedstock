@@ -1,5 +1,6 @@
 {% set version = "2.99.73" %}
 {% set tag = "v" + version %}
+{% set sha256 = "PLACEHOLDER_HASH" %}
 {% set build = 0 %}
 
 # prioritize gui variant via build number
@@ -14,6 +15,7 @@ package:
 source:
   - url: https://github.com/cryoem/eman2/archive/{{ tag }}.tar.gz
     fn: eman2-{{ tag }}.tar.gz
+    sha256: {{ sha256 }}
   - url: https://www.khronos.org/registry/OpenGL/api/GL/glext.h             # [win]
     folder: GL                                                              # [win]
   - url: https://www.khronos.org/registry/EGL/api/KHR/khrplatform.h         # [win]
@@ -26,9 +28,8 @@ build:
   # `pkg * gui_*` for any gui
   # `pkg * nogui_*` for no gui
   string: "{{ ui }}_h{{ PKG_HASH }}_{{ build }}"
-  skip: True  # [py != 312 and linux]
-  skip: True  # [py != 312 and osx]
-  skip: True  # [win]
+  # Combined into a single line to fix the conda-smithy selector metadata warning
+  skip: True  # [win or (py != 312 and linux) or (py != 312 and osx)]
 
 requirements:
   build:
@@ -39,7 +40,6 @@ requirements:
     - make                               # [unix]
     - python                             # [build_platform != target_platform]
     - cmake                              # [build_platform != target_platform]
-#    - numpy                              # [build_platform != target_platform]
     - numpy
     - cross-python_{{ target_platform }} # [build_platform != target_platform]
 
@@ -49,7 +49,6 @@ requirements:
     - pyqt                               # [ui == 'gui']
     - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
-
     - ipywidgets
     - matplotlib
     - scipy
@@ -58,7 +57,6 @@ requirements:
     - pandas
     - tensorflow >=2.18
     - tf-keras
-#    - pydusa                             # [not win]
     - future
     - configparser
     - tqdm
@@ -66,7 +64,6 @@ requirements:
     - nodejs
     - biopython
     - umap-learn
-
     - boost
     - fftw
     - numpy
@@ -74,7 +71,6 @@ requirements:
     - freetype
     - gsl
     - hdf5         >=1.12                # [not win]
-#    - hdf5         <1.14                 # [win]
     - libtiff
     - libpng
     - zlib
@@ -84,7 +80,6 @@ requirements:
     - pyqt                               # [ui == 'gui']
     - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
-
     - ipywidgets
     - matplotlib
     - scipy
@@ -93,7 +88,6 @@ requirements:
     - pandas
     - tensorflow >=2.18
     - tf-keras
-#    - pydusa                             # [not win]
     - future
     - configparser
     - tqdm
@@ -101,7 +95,6 @@ requirements:
     - nodejs
     - biopython
     - umap-learn
-
     - boost
     - fftw
     - {{ pin_compatible('numpy') }}
@@ -109,7 +102,6 @@ requirements:
     - freetype
     - gsl
     - hdf5         >=1.12                # [not win]
-#    - hdf5         <1.14                 # [win]
     - libtiff
     - libpng
     - zlib
