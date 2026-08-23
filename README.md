@@ -13,7 +13,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/cryoem/eman-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/cryoem/eman-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -33,31 +40,73 @@ conda config --add channels cryoem
 conda config --set channel_priority strict
 ```
 
-Once the `cryoem` channel has been enabled, `eman-dev` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install eman-dev
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install eman-dev
 ```
 
-It is possible to list all of the versions of `eman-dev` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add eman-dev
+# for installing globally
+pixi global install eman-dev
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `eman-dev` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search eman-dev --channel cryoem
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search eman-dev --channel cryoem
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search eman-dev --channel cryoem
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -69,6 +118,8 @@ mamba repoquery whoneeds eman-dev --channel cryoem
 # List dependencies of `eman-dev`:
 mamba repoquery depends eman-dev --channel cryoem
 ```
+
+</details>
 
 
 
