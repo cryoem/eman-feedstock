@@ -1,6 +1,6 @@
-{% set version = "2.99.82" %}
+{% set version = "2.99.83" %}
 {% set tag = "v" + version %}
-{% set sha256 = "04f7ab9f8c61ba15e2b36eff66a817a69729fa12f220905942fab0e2713d9441" %}
+{% set sha256 = "4c2bc40a42c0af5d40e5010fcddbc6cdca3f0ca5656316ec3b669dc78cc604ab" %}
 {% set build = 0 %}
 
 # prioritize gui variant via build number
