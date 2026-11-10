@@ -46,7 +46,7 @@ requirements:
   host:
     - python
     - pip
-    - pyqt                               # [ui == 'gui']
+    - pyside6                            # [ui == 'gui']
     - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
     - ipywidgets
@@ -77,7 +77,7 @@ requirements:
 
   run:
     - python
-    - pyqt                               # [ui == 'gui']
+    - pyside6                            # [ui == 'gui']
     - pyopengl                           # [ui == 'gui']
     - cmake        >=3.14
     - ipywidgets
